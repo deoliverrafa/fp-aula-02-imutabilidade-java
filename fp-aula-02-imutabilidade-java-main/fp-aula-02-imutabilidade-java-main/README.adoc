@@ -1,0 +1,26 @@
+= Praticando Imutabilidade em Java
+
+Um repositório com a estrutura básica de um projeto de exemplo
+para a criação de classes e records para testar os conceitos de imutabilidade
+em Java.
+
+Você deve criar uma cópia deste repositório clicando no botão "Fork" no canto superior direito da página.
+**O botão só aparece se você estiver logado no GitHub.**
+
+Todos os arquivos devem ser incluídos dentro do pacote previamente criado.
+
+- [ ] Crie um record chamado CidadeRecord com um campo nome do tipo String.
+      Como ele só terá este único atributo String, CidadeRecord será imutável.
+- [ ] Crie uma classe Cidade mutável, contendo os mesmos atributos de CidadeRecord,
+      mas com getters e setters.
+- [ ] Crie um record chamado PessoaRecordShallow com campos `String nome` e `Cidade cidade`.
+      Veja que, apesar de ser um record e você não poder reatribuir valores para os campos,
+      PessoaRecordShallow é superficialmente imutável (shallow imutability), pois Cidade é mutável.
+- [ ] Crie um record chamado PessoaRecord com campos `String nome` e `CidadeRecord cidade`.
+      Veja que, agora todos os campos de PessoaRecord são imutáveis (incluindo cidade que é finalmente um record),
+      isto torna PessoaRecord profundamente (totalmente) imutável (deep imutability).
+
+Para confirmar que você implementou todas as tarefas e fez como deveria,
+compile o projeto e veja as mensagens no terminal ou execute os testes
+por meio do seu IDE. No IntelliJ, por exemplo, você pode clicar com o botão
+direito no nome do projeto na barra lateral esquerda e escolher "Run All Tests".

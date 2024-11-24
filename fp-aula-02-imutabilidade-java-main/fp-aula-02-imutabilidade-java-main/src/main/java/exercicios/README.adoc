@@ -1,0 +1,3 @@
+= Pacote para inclusão das tarefas
+
+Crie aqui os arquivos solicitados no README na raiz do projeto.
